@@ -10,6 +10,7 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 app.MapGet("/", () => "Hello from Cloud Run!");
+app.MapGet("/time", () => $"Current UTC time is: {DateTime.UtcNow}!");
 app.Run();
 
 // Configure the HTTP request pipeline.
