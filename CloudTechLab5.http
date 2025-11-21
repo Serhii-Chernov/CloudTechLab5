@@ -1,0 +1,6 @@
+@CloudTechLab5_HostAddress = http://localhost:5299
+
+GET {{CloudTechLab5_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
